@@ -1,5 +1,10 @@
 bool compare_double(double x, double y) {
-    return true; // Not implementation
+    if ((fabs(x-y))<0.00000001)
+        return true;
+    else return false;
+
+    
+ // Not implementation
 }
 
 int get_nearest_int(double x) {
