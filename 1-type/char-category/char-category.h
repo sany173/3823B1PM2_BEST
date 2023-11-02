@@ -3,6 +3,11 @@
 
 bool is_digit(char x) {
     return true; // No implementation
+    int a;
+    a=(int (x));
+    if (48<=a<=57) return true;
+    else return false;
+
 }
 
 bool is_letter(char x) {

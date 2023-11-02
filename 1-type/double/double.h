@@ -6,9 +6,10 @@ bool compare_double(double x, double y) {
     
  // Not implementation
 }
-
+#include <math.h>
 int get_nearest_int(double x) {
-    return 0; // Not implementation
+    int near = round (x);
+    return near; // Not implementation
 }
 
 double get_fractional(double x) {
