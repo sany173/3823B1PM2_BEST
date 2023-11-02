@@ -3,7 +3,7 @@
 char find_bin_pattern(int number){
     int i=0;
     int c=10;
-    long int x=0;
+    long long int x=0;
     int res=0;
     while (number>0){
         x+=number%2*pow(c,i);
@@ -18,4 +18,4 @@ char find_bin_pattern(int number){
         else x/=10;
     }
     return res;
-}
+}   
