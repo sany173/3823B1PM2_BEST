@@ -214,7 +214,7 @@ jobs:
         working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/2-if_else_switch/change
-          python3 fill_magazine.py -t "change" -r "$(echo $?)"
+          python3 fill_magazine.py -t "Change" -r "$(echo $?)"
           
       - name: 2-if_else_switch leapyear
         if: always()
@@ -222,7 +222,7 @@ jobs:
         working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/2-if_else_switch/leapyear
-          python3 fill_magazine.py -t "leapyear" -r "$(echo $?)"
+          python3 fill_magazine.py -t "LeapYear" -r "$(echo $?)"
 
       - name: 2-if_else_switch chocolate
         if: always()
@@ -230,7 +230,7 @@ jobs:
         working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/2-if_else_switch/chocolate
-          python3 fill_magazine.py -t "chocolate" -r "$(echo $?)"
+          python3 fill_magazine.py -t "Chocolate" -r "$(echo $?)"
 
       - name: 2-if_else_switch icecream
         if: always()
@@ -238,7 +238,7 @@ jobs:
         working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/2-if_else_switch/icecream
-          python3 fill_magazine.py -t "icecream" -r "$(echo $?)"
+          python3 fill_magazine.py -t "IceCream" -r "$(echo $?)"
 
       - name: 2-if_else_switch QuadraticEquation
         if: always()
@@ -254,7 +254,7 @@ jobs:
         working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/2-if_else_switch/monthday
-          python3 fill_magazine.py -t "monthday" -r "$(echo $?)"
+          python3 fill_magazine.py -t "MonthDay" -r "$(echo $?)"
 
       - name: 2-if_else_switch chess
         if: always()
@@ -262,7 +262,7 @@ jobs:
         working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/2-if_else_switch/chess
-          python3 fill_magazine.py -t "chess" -r "$(echo $?)"
+          python3 fill_magazine.py -t "Chess" -r "$(echo $?)"
 
       - name: 2-if_else_switch twoboxes
         if: always()
@@ -270,7 +270,247 @@ jobs:
         working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/2-if_else_switch/twoboxes
-          python3 fill_magazine.py -t "twoboxes" -r "$(echo $?)"
+          python3 fill_magazine.py -t "TwoBoxes" -r "$(echo $?)"
+
+      - name: 3-loop bin_patterns
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/3-loop/find_bin_pattern
+          python3 fill_magazine.py -t "bin_patterns" -r "$(echo $?)"
+          
+      - name: 3-loop calc_e
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/3-loop/calc_e
+          python3 fill_magazine.py -t "calc_e" -r "$(echo $?)"
+
+      - name: 3-loop count_max_digit
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/3-loop/count_max_digit
+          python3 fill_magazine.py -t "count_max_digit" -r "$(echo $?)"
+
+      - name: 3-loop fibonacci
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/3-loop/fibonacci
+          python3 fill_magazine.py -t "fibonacci" -r "$(echo $?)"
+
+      - name: 3-loop find_digit
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/3-loop/find_digit
+          python3 fill_magazine.py -t "find_digit" -r "$(echo $?)"
+          
+      - name: 3-loop find_elem
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/3-loop/find_elem
+          python3 fill_magazine.py -t "find_elem" -r "$(echo $?)"
+
+      - name: 3-loop integral
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/3-loop/integral
+          python3 fill_magazine.py -t "integral" -r "$(echo $?)"
+          
+      - name: 3-loop limit
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/3-loop/limit
+          python3 fill_magazine.py -t "limit" -r "$(echo $?)"
+          
+      - name: 3-loop numinvers
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/3-loop/numinvers
+          python3 fill_magazine.py -t "numinvers" -r "$(echo $?)"
+
+      - name: 3-loop row
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/3-loop/row
+          python3 fill_magazine.py -t "row" -r "$(echo $?)"
+
+      - name: 4-array det
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/4-array/det
+          python3 fill_magazine.py -t "det" -r "$(echo $?)"
+          
+      - name: 4-array find_hole
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/4-array/find_hole
+          python3 fill_magazine.py -t "find_hole" -r "$(echo $?)"
+
+      - name: 4-array get_percent
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/4-array/get_percent
+          python3 fill_magazine.py -t "get_percent" -r "$(echo $?)"   
+
+      - name: 4-array kernel
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/4-array/kernel
+          python3 fill_magazine.py -t "kernel" -r "$(echo $?)"
+
+      - name: 4-array little_big_converter
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/4-array/little_big_converter
+          python3 fill_magazine.py -t "little_big_converter" -r "$(echo $?)"
+          
+      - name: 4-array max_local_min
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/4-array/max_local_min
+          python3 fill_magazine.py -t "max_local_min" -r "$(echo $?)"          
+          
+      - name: 4-array more_on_left
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/4-array/more_on_left
+          python3 fill_magazine.py -t "more_on_left" -r "$(echo $?)"          
+          
+      - name: 4-array robot
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/4-array/robot
+          python3 fill_magazine.py -t "robot" -r "$(echo $?)"             
+        
+      - name: 5-pointer even
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/5-pointer/even
+          python3 fill_magazine.py -t "even" -r "$(echo $?)"      
+
+      - name: 5-pointer matrix_multy
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/5-pointer/matrix_multy
+          python3 fill_magazine.py -t "matrix_multy" -r "$(echo $?)"            
+          
+      - name: 5-pointer packaging
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/5-pointer/packaging
+          python3 fill_magazine.py -t "packaging" -r "$(echo $?)"
+
+      - name: 5-pointer calculate size
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/5-pointer/calc_size
+          python3 fill_magazine.py -t "calc_size" -r "$(echo $?)"
+
+      - name: 5-pointer angle
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/5-pointer/angle
+          python3 fill_magazine.py -t "angle" -r "$(echo $?)"
+
+      - name: 5-pointer wild game
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/5-pointer/wild_game
+          python3 fill_magazine.py -t "wild_game" -r "$(echo $?)"
+
+      - name: 6-functions array transform
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/6-functions/array_transform
+          python3 fill_magazine.py -t "array_transform" -r "$(echo $?)"
+      
+      - name: 6-functions kramer
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/6-functions/kramer
+          python3 fill_magazine.py -t "kramer" -r "$(echo $?)"
+
+      - name: 6-functions loops
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/6-functions/loops
+          python3 fill_magazine.py -t "loops" -r "$(echo $?)"
+
+      - name: 6-functions max_min
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/6-functions/max_min
+          python3 fill_magazine.py -t "max_min" -r "$(echo $?)"
+
+      - name: 6-functions one array
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/6-functions/one_array
+          python3 fill_magazine.py -t "one_array" -r "$(echo $?)"
+
+      - name: 6-functions subarray
+        if: always()
+        shell: bash
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
+        run: |
+          ./build/6-functions/subarray
+          python3 fill_magazine.py -t "subarray" -r "$(echo $?)"
           
       - name: Estimate
         if: always()
