@@ -1,14 +1,16 @@
 #include <math.h>
 
 char count_max_digit(long long int){
-    int intdig
-    int max=0;
-    for (i=0;i<strlen(count_max_digit);i++){
-        if (count_max_digit[i]>max){
-            max=count_max_digit[i];
-        }
+    // c = count_max_digit + '0';
+    // int max=0;
+    // for (int i=0;i<strlen(c);i++){
+        // ci = 
+        // if (c[i]>max){
+            // max=count_max_digit[i];
 
-    }   
+    return 100;}
+
+    //    
 
 
     
@@ -18,5 +20,4 @@ char count_max_digit(long long int){
 
 
 
-    return 100;
-}
+ 
